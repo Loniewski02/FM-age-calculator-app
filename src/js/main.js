@@ -102,6 +102,7 @@ const enterKeyCheck = event => {
 };
 
 calcBtn.addEventListener('click', () => {
+	calcBtn.focus();
 	main();
 });
 

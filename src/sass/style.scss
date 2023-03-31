@@ -119,6 +119,11 @@ body {
 			cursor: pointer;
 			transition: background-color 0.3s;
 
+			&:focus {
+				outline: none;
+				background-color: hsl(318, 50%, 47%);
+			}
+
 			&:hover {
 				background-color: $off-black;
 			}
