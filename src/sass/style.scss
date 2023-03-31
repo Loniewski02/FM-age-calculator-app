@@ -202,6 +202,10 @@ body {
 				gap: 0.5em;
 				max-width: 180px;
 
+				.error-info {
+					font-size: 1.3rem;
+				}
+
 				label {
 					font-size: 1.4rem;
 				}

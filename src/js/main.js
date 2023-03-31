@@ -71,7 +71,7 @@ const calculateAge = (year, month, day) => {
 	yearParagraph.textContent = ageInYears;
 	monthParagraph.textContent = monthsInYear;
 	dayParagraph.textContent = ageInDays;
-}
+};
 
 const checkErrors = () => {
 	const dateBoxes = document.querySelectorAll('.calculator__data-box');
@@ -87,10 +87,22 @@ const checkErrors = () => {
 	}
 };
 
-calcBtn.addEventListener('click', () => {
+const main = () => {
 	checkForm(allInputs);
 	checkDate(dayInp, 31);
 	checkDate(monthInp, 12);
 	checkYear(yearInp);
 	checkErrors();
+};
+
+const enterKeyCheck = event => {
+	if (event.key === 'Enter') {
+		main();
+	}
+};
+
+calcBtn.addEventListener('click', () => {
+	main();
 });
+
+allInputs.forEach(input => input.addEventListener('keyup', enterKeyCheck));
