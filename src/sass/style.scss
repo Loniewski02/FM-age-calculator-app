@@ -100,6 +100,7 @@ body {
 		height: 1px;
 
 		hr {
+			border: none;
 			border-top: 1px solid $off-white;
 		}
 
@@ -191,7 +192,7 @@ body {
 	.calculator {
 		margin: 0;
 		padding: 2.5em 5em 2.5em 3em;
-		border-bottom-right-radius: 160px;
+		border-bottom-right-radius: 170px;
 
 		&__data {
 			gap: 2em;
@@ -199,14 +200,14 @@ body {
 
 			&-box {
 				gap: 0.5em;
-				max-width: 190px;
+				max-width: 180px;
 
 				label {
 					font-size: 1.4rem;
 				}
 
 				input {
-					padding: 0.2em 0.8em;
+					padding: 0.3em 0.8em;
 					font-size: 3.2rem;
 				}
 			}
