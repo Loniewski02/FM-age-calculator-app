@@ -55,7 +55,7 @@ Users should be able to:
 
 ### What I learned
 
-I learned many useful methods related to the date object, such as: get
+I learned many useful methods related to the date object, such as:
 
 ```js
    .getFullYear(),
