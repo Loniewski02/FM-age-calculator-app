@@ -87,7 +87,7 @@ body {
 
 				&::placeholder {
 					font-weight: 800;
-					color: $smokey-grey;
+
 				}
 			}
 		}
@@ -101,7 +101,7 @@ body {
 
 		hr {
 			border: none;
-			border-top: 1px solid $light-grey;
+			border-top: 2px solid $light-grey;
 		}
 
 		&-btn {
@@ -204,8 +204,8 @@ body {
 			margin-right: 7em;
 
 			&-box {
-				gap: 0.5em;
-				max-width: 180px;
+				gap: 0.4em;
+				max-width: 160px;
 
 				.error-info {
 					font-size: 1.3rem;
@@ -229,10 +229,10 @@ body {
 			&-btn {
 				left: 100%;
 				top: 50%;
-				padding: 1.2em;
+				padding: 1.3em;
 				img {
-					height: 3.8rem;
-					width: 3.8rem;
+					height: 4.2rem;
+					width: 4.2rem;
 				}
 			}
 		}
@@ -242,7 +242,7 @@ body {
 				font-weight: 700;
 				font-style: italic;
 				color: $off-black;
-				font-size: 9rem;
+				font-size: 10rem;
 				line-height: 1.2em;
 
 				span {
