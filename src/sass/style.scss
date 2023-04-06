@@ -149,13 +149,6 @@ body {
 	}
 }
 
-.attribution {
-	padding: 2em;
-	line-height: 1.9em;
-	font-size: 1.6rem;
-	text-align: center;
-}
-
 @media (min-width: 1440px) {
 	.main {
 		display: flex;
@@ -210,7 +203,7 @@ body {
 				font-weight: 700;
 				font-style: italic;
 				color: $off-black;
-				font-size: 10rem;
+				font-size: 11rem;
 				line-height: 1.1em;
 
 				span {

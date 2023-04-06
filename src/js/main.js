@@ -70,11 +70,11 @@ const checkYear = input => {
 		showError(input, `Wrong format, numbers only`);
 	} else if (today - new Date(yearInp.value, monthInp.value - 1, dayInp.value) <= 0) {
 		showError(input, 'Must be in the past');
-	}
+	} 
 };
 
 const calculateAge = (year, month, day) => {
-	const birthDate = new Date(birthYear, month.value - 1, day.value);
+	const birthDate = new Date(year.value, month.value - 1, day.value);
 
 	let ageInMilliseconds = today - birthDate;
 	let ageInYears = Math.floor(ageInMilliseconds / 1000 / 60 / 60 / 24 / 365.25);
