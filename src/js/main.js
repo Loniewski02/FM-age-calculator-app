@@ -70,7 +70,7 @@ const checkYear = input => {
 		showError(input, `Wrong format, numbers only`);
 	} else if (today - new Date(yearInp.value, monthInp.value - 1, dayInp.value) <= 0) {
 		showError(input, 'Must be in the past');
-	} 
+	}
 };
 
 const calculateAge = (year, month, day) => {
@@ -96,9 +96,37 @@ const calculateAge = (year, month, day) => {
 		ageInYears += Math.floor(ageInMonths / 12);
 	}
 
-	yearParagraph.textContent = ageInYears;
-	monthParagraph.textContent = monthsInYear;
-	dayParagraph.textContent = ageInDays;
+	let currentYear = 0;
+	let currentMonth = 0;
+	let currentDay = 0;
+
+	const updateYear = () => {
+		yearParagraph.textContent = currentYear;
+		currentYear++;
+		if (currentYear <= ageInYears) {
+			setTimeout(updateYear, 100);
+		}
+	};
+
+	const updateMonth = () => {
+		monthParagraph.textContent = currentMonth;
+		currentMonth++;
+		if (currentMonth <= monthsInYear) {
+			setTimeout(updateMonth, 100);
+		}
+	};
+
+	const updateDay = () => {
+		dayParagraph.textContent = currentDay;
+		currentDay++;
+		if (currentDay <= ageInDays) {
+			setTimeout(updateDay, 100);
+		}
+	};
+
+	setTimeout(updateYear, 100);
+	setTimeout(updateMonth, 200);
+	setTimeout(updateDay, 300);
 };
 
 const checkErrors = () => {

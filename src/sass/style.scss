@@ -157,7 +157,7 @@ body {
 	}
 	.calculator {
 		margin: 0;
-		padding: 3.5em 5.5em 2.5em 2.5em;
+		padding: 3.5em 5.5em 2.5em 3em;
 		border-bottom-right-radius: 160px;
 
 		&__data {
@@ -200,15 +200,8 @@ body {
 
 		&__info {
 			&-text {
-				font-weight: 700;
-				font-style: italic;
-				color: $off-black;
-				font-size: 11rem;
-				line-height: 1.1em;
-
-				span {
-					color: $purple;
-				}
+				font-size: 10rem;
+				line-height: 1.2em;
 			}
 		}
 	}
